@@ -9,7 +9,7 @@ class DangerSwift < Formula
   # Runs only on Xcode 12
   depends_on :xcode => ["12", :build]
   # Use the vendored danger
-  depends_on "danger/tap/danger-js"
+  depends_on "leokapanen/homebrew-tap/danger-js"
 
   def install
     system "make", "install", "PREFIX=#{prefix}"
